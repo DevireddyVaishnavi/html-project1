@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* background-color: #012169;
+    color: white; */
+  }
+  /* Header */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+    align-items: center;
+  }
+  .navbar div {
+    flex: 20%;
+  }
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 80%;
+  
+    margin-left: 30px;
+  }
+  .navbar a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .navbar_logo {
+    font-size: 40px;
+  }
+  #n-text {
+    color: red;
+    font-size: 60px;
+    font-weight: 800;
+  }
+  #nav_photostudio {
+    font-size: 17px;
+  }
+  .navbar li {
+    transition: all 0.3s ease;
+  }
+  .navbar li:hover {
+    transform: translateY(-5px);
+  }
+  .navbar a:hover {
+    color: red;
+  }
+  
+  /* Hero section */
+  .hero_left_img img {
+    width: 100px;
+    height: 400px;
+  }
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7% 10%;
+  }
+  .hero_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero_left_img {
+    width: 100px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(./studio_assets/img_1.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: width 0.5s ease;
+  }
+  .hero_left_img:nth-child(2) {
+    background: url(./studio_assets/img_6.jpg.HEIC);
+    background-position: center;
+    background-size: cover;
+  }
+  .hero_left_img:nth-child(3) {
+    background: url(./studio_assets/img_11.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .hero_left_img:nth-child(4) {
+    background: url(./studio_assets/img_14.JPG);
+    background-position: center;
+    background-size: cover;
+  }
+  .hero_left_img:hover {
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+  }
+  /* About me section */
+  .aboutme_upper h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 25px 0;
+  }
+  .aboutme_lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  }
+  .aboutme_left img {
+    width: 400px;
+    height: auto;
+    border-radius: 20%;
+  }
+  .aboutme_left {
+    text-align: center;
+  }
+  .aboutme_right {
+    /* display: flex; */
+    align-items: center;
+    padding: 0 5%;
+  }
+  .aboutme_right_box1 {
+    margin: 10px 0;
+  }
+  .aboutme_right_box1 h1 {
+    font-size: 2rem;
+    margin: 20px 0 10px 0;
+  }
+  .aboutme_right_box1 p {
+    text-indent: 35px;
+  }
+  
+  /* services */
+  .services {
+    margin-top: 50px;
+    background-color: #0c0c0c;
+    color: white;
+  }
+  .services_upper h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .service_box {
+    width: 430px;
+    margin: 40px 0;
+    /* background-color: #481e14; */
+    background-color: #1b1a55;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    transition: transform 0.3s ease;
+  }
+  .service_box:hover {
+    transform: translateY(-12px);
+  }
+  .service_box img {
+    width: 350px;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 25px;
+  }
+  .services_lower {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  }
+  .service_box h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 10px 0;
+  }
+  #services_img_5 {
+    height: 233px;
+  }
+  .service_box p {
+    font-size: 1.2rem;
+    text-indent: 40px;
+    text-align: justify;
+    padding: 20px 0;
+  }
+  /* booking */
+  .booking {
+    padding: 30px 10%;
+    margin: 30px 0;
+  }
+  .booking_upper h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  
+  .booking_first {
+    display: grid;
+    grid-template-columns: 20% 20%;
+    justify-content: center;
+    align-content: center;
+    column-gap: 30px;
+    row-gap: 25px;
+    margin: 30px 0;
+  }
+  #name,
+  #email,
+  #date,
+  #purpose,
+  #address {
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 0 20px;
+    border: 1px solid;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: black;
+  }
+  #purpose {
+    width: 250px;
+  }
+  .booking_first label {
+    font-size: 1.5rem;
+    padding: 10px 2px;
+  }
+  .book_btn {
+    width: 150px;
+    height: 40px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: rgba(228, 139, 5, 0.753);
+    border: 1px solid;
+    margin-top: 38px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  .book_btn:hover {
+    transform: translateY(-5px);
+    background-color: white;
+    color: red;
+    box-shadow: 0 0 5px black;
+  }
